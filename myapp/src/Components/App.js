@@ -1,61 +1,28 @@
-import React, { Component } from 'react';
-import {Button} from 'react-bootstrap';
-class App extends Component {
+import React from 'react';
+import Home from './home';
+import About from './aboutcomponent';
+import Register from './register';
+import Test from './nodetest';
+import { BrowserRouter,Switch,Route} from 'react-router-dom';
+class App extends React.Component {
   state = { name: 0 }
   render() { 
-    return ( <div>
-      <div className="row">
-        <div className="col col-md-1" >
-        <div className="badge badge-danger">
-        {this.state.name}
-      </div>
-        </div>
-        <div className="col col-md-1">
-        <button className="btn btn-warning" onClick={this.reset}>
-      Reset
-    </button>
-        </div>
-        <div className="col col-md-1">
-        <button className="btn btn-success" onClick={this.inc}>
-        Increment
-      </button> 
-        </div>
-        <div className="col col-md-1">
-        <button className="btn btn-info" onClick={this.dec}>
-        Decrement
-      </button>
-        </div>
-        <div className="col col-md-1">
-        <button className="btn btn-primary" onClick={this.mul}>
-       Multiply
-      </button>
-        </div>
-      </div>
-    
-   
+    return (
      
-     
-     
-     
+       <div>
+          <BrowserRouter>
+          <Switch>
+          <Route path='/aboutus' ><About></About></Route>
+          <Route path='/register' ><Register></Register></Route>
+          <Route path='/test' ><Test></Test></Route>
+          <Route path='/' >
+         <Home></Home>
+          </Route>
+           
+            </Switch>
+     </BrowserRouter>
     </div>
        );
   }
-
-reset = () => {
-  this.setState({name : 1})
 }
-
-
-  mul = () => {
-    this.setState({name :  this.state.name*this.state.name})
-  }
-  inc = () => {
-    this.setState({name : this.state.name+1});
-  }
-  dec = () => {
-    this.setState({name : this.state.name-1});
-  }
-
-}
- 
 export default App;
