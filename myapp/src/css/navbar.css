@@ -1,0 +1,107 @@
+
+.header{
+    display: flex;
+    background-color: aquamarine;
+    width: 100%;
+    height: 15vh;
+    color: white;
+}
+.btn{
+    background-color: aquamarine; 
+    font-style: italic;
+    text-align: left;
+    text-transform:capitalize;
+}
+.logo{
+  
+    flex:1;
+
+}
+/* .p{
+    display:flex ;
+    justify-content:flex-end;
+   
+    margin: auto;
+} */
+.navbar{
+    flex: 4;
+     font-style:oblique;
+    
+    display: flex;
+    text-align: center;
+    margin:auto 0;
+}
+
+li{
+    display: inline;
+    padding: 2px;
+    margin: 5px;
+
+
+}
+.img{
+ 
+    height: 400px;
+    
+
+}
+.animation{
+    height: 400px;
+-webkit-animation:thing 20s;
+-o-animation:thing  20s;
+animation: thing 20s;
+transform-origin: 0% 0% 0px;
+
+}
+@keyframes thing{
+    from{
+        transform: scale(1,1);
+    }
+    to{
+transform: scale(1.2,1.2);
+    }
+}
+h1{
+    color:rgb(221, 176, 52);
+   align-items: center;
+   font-size:0in;
+  
+   
+}
+
+.btn1 {
+    transition: width 1.5s, height 1s, transform 2s;
+    
+  }
+  
+  .btn1:hover {
+    width: 100%;
+    transform: rotate(0deg);
+
+  }
+.box{
+  
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+  .box select{
+    background-color: rgb(138, 130, 130); 
+    margin-top: auto;
+      color:white;
+      margin-left:auto;
+      margin-right: auto;
+       border: none;
+       outline: none;
+      -webkit-appearance: button; 
+  }
+  .box:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+  
+      height: auto;
+      background: rgba(0, 119, 54, 0.8);
+  }

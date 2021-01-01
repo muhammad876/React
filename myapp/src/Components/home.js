@@ -10,14 +10,13 @@ class Home extends React.Component {
         return (
         <div>
             <Navbar />
-            <Header>
-            </Header>
-            <div className="row">
-              <div className="col col-md-2" >
-            
+          
+            <div className="row  mb-5 mt-5">
+            <div className="col col-md-1">
               </div>
-              <div className="col col-md-9">
-             
+              <div className="col col-md-10">
+              <Header>
+            </Header>
               <ContactUs></ContactUs>
               <Card></Card>
               </div>

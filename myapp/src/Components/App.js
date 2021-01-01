@@ -14,7 +14,6 @@ class App extends React.Component {
           <Switch>
           <Route path='/aboutus' ><About></About></Route>
           <Route path='/register' ><Register></Register></Route>
-          <Route path='/test' ><Test></Test></Route>
           <Route path='/' >
          <Home></Home>
           </Route>
